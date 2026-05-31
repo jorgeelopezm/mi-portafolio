@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <!-- Orden de carga importa: base -> layout -> components -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-title">Jorge Meléndez</h1>
+      <p class="tagline">Desarrollador en formación, creando con calma y cuidado.</p>
+    </div>
+    <nav class="nav" aria-label="Navegación principal">
+      <ul class="nav__list">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2 class="section__title">Sobre mí</h2>
+      <p>
+        Soy estudiante del curso de desarrollo de software aumentado con IA.
+        Me gusta construir interfaces sencillas y legibles, cuidando los detalles
+        y la experiencia de quien las usa.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section__title">Proyectos</h2>
+      <div class="projects">
+        <article class="project-card">
+          <h3 class="project-card__title">Proyecto uno</h3>
+          <p>Breve descripción del proyecto: qué resuelve y qué tecnologías usa.</p>
+        </article>
+        <article class="project-card">
+          <h3 class="project-card__title">Proyecto dos</h3>
+          <p>Breve descripción del proyecto: qué resuelve y qué tecnologías usa.</p>
+        </article>
+        <article class="project-card">
+          <h3 class="project-card__title">Proyecto tres</h3>
+          <p>Breve descripción del proyecto: qué resuelve y qué tecnologías usa.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section__title">Contacto</h2>
+      <ul class="contact">
+        <li>Email: <a href="mailto:jorgee.lmelendez@gmail.com">jorgee.lmelendez@gmail.com</a></li>
+        <li>GitHub: <a href="#">github.com/tu-usuario</a></li>
+        <li>LinkedIn: <a href="#">linkedin.com/in/tu-usuario</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Jorge Meléndez</p>
+  </footer>
+</body>
+</html>

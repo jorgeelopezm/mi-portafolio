@@ -1,0 +1,62 @@
+/* layout.css — estructura de página: header/nav, secciones, footer y responsive */
+
+.site-header {
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-sage);
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md) var(--space-md);
+}
+
+.site-title {
+  margin-bottom: var(--space-sm);
+}
+
+.tagline {
+  color: var(--color-text);
+  font-size: 1.125rem;
+}
+
+.nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md) var(--space-md);
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+}
+
+.section__title {
+  margin-bottom: var(--space-md);
+}
+
+.section p {
+  margin-bottom: var(--space-md);
+}
+
+.site-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+  color: var(--color-text);
+  border-top: 1px solid var(--color-sage);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  :root {
+    --space-lg: 2.5rem;
+  }
+}
