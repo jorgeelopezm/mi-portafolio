@@ -68,4 +68,14 @@ El archivo deploy.md ¿Queda vacío? Explíca porqué
 Prompt 5:
 Crea un plan para implementarlo con un comando /deploy
 
+Prompt 6: 
+Plan aprobado
+
+Prompt 7:
+/deploy fix:Implementación del comando deploy
+
+Prompt 8
+Procede con git push origin main
+
+
 
