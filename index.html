@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio</title>
+  <title>Jorge Meléndez — Integration &amp; DevOps Engineer</title>
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <!-- Orden de carga importa: base -> layout -> components -->
   <link rel="stylesheet" href="css/base.css">
@@ -11,60 +11,193 @@
   <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <h1 class="site-title">Jorge Meléndez</h1>
-      <p class="tagline">Desarrollador en formación, creando con calma y cuidado.</p>
-    </div>
-    <nav class="nav" aria-label="Navegación principal">
+  <!-- Nav pegajoso -->
+  <nav class="nav" aria-label="Primary">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top">Jorge Meléndez</a>
       <ul class="nav__list">
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a class="nav__link" href="#skills">Skills</a></li>
+        <li><a class="nav__link" href="#experience">Experience</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
       </ul>
-    </nav>
+    </div>
+  </nav>
+
+  <!-- Header band -->
+  <header id="top" class="site-header">
+    <div class="header-inner">
+      <div class="header-text">
+        <p class="kicker">JORGE MELÉNDEZ</p>
+        <h1 class="header-title">Integration &amp; DevOps Engineer</h1>
+        <p class="header-tagline">
+          I connect systems and smooth the path from commit to production —
+          quietly, reliably, and with a calm pipeline behind it all.
+        </p>
+        <div class="header-meta">
+          <span>Montevideo, Uruguay · Remote-friendly</span>
+          <span class="header-meta__sep" aria-hidden="true">·</span>
+          <span>8 years building and operating delivery platforms</span>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section id="about" class="section">
-      <h2 class="section__title">Sobre mí</h2>
-      <p>
-        Soy estudiante del curso de desarrollo de software aumentado con IA.
-        Me gusta construir interfaces sencillas y legibles, cuidando los detalles
-        y la experiencia de quien las usa.
-      </p>
-    </section>
-
-    <section id="projects" class="section">
-      <h2 class="section__title">Proyectos</h2>
-      <div class="projects">
-        <article class="project-card">
-          <h3 class="project-card__title">Proyecto uno</h3>
-          <p>Breve descripción del proyecto: qué resuelve y qué tecnologías usa.</p>
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="edit-head">
+        <p class="kicker">What I work with</p>
+        <h2 class="edit-head__title">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3 class="skill-card__title">Cloud &amp; Infrastructure</h3>
+          <ul class="skill-list">
+            <li>AWS</li>
+            <li>Azure</li>
+            <li>GCP</li>
+            <li>Linux</li>
+            <li>Networking &amp; DNS</li>
+          </ul>
         </article>
-        <article class="project-card">
-          <h3 class="project-card__title">Proyecto dos</h3>
-          <p>Breve descripción del proyecto: qué resuelve y qué tecnologías usa.</p>
+        <article class="skill-card">
+          <h3 class="skill-card__title">Infrastructure as Code</h3>
+          <ul class="skill-list">
+            <li>Terraform</li>
+            <li>Ansible</li>
+            <li>Pulumi</li>
+            <li>Helm</li>
+          </ul>
         </article>
-        <article class="project-card">
-          <h3 class="project-card__title">Proyecto tres</h3>
-          <p>Breve descripción del proyecto: qué resuelve y qué tecnologías usa.</p>
+        <article class="skill-card">
+          <h3 class="skill-card__title">CI/CD &amp; GitOps</h3>
+          <ul class="skill-list">
+            <li>GitHub Actions</li>
+            <li>GitLab CI</li>
+            <li>Jenkins</li>
+            <li>ArgoCD</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3 class="skill-card__title">Containers &amp; Orchestration</h3>
+          <ul class="skill-list">
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Nomad</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3 class="skill-card__title">Observability</h3>
+          <ul class="skill-list">
+            <li>Prometheus</li>
+            <li>Grafana</li>
+            <li>Loki</li>
+            <li>OpenTelemetry</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3 class="skill-card__title">Integration</h3>
+          <ul class="skill-list">
+            <li>REST &amp; gRPC APIs</li>
+            <li>Kafka</li>
+            <li>RabbitMQ</li>
+            <li>Webhooks</li>
+            <li>ETL pipelines</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3 class="skill-card__title">Languages</h3>
+          <ul class="skill-list">
+            <li>Python</li>
+            <li>Go</li>
+            <li>Bash</li>
+            <li>YAML</li>
+          </ul>
         </article>
       </div>
     </section>
 
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="edit-head">
+        <p class="kicker">Where I've been</p>
+        <h2 class="edit-head__title">Experience</h2>
+      </div>
+      <div class="exp-list">
+        <article class="exp-card">
+          <div class="exp-card__head">
+            <h3 class="exp-card__role">Senior Integration Engineer</h3>
+            <p class="exp-card__company">Northwind Systems</p>
+            <span class="pill">2022 — Present</span>
+          </div>
+          <div class="exp-card__body">
+            <p class="exp-card__summary">
+              Lead the integration platform connecting 30+ internal and partner services.
+            </p>
+            <ul class="exp-points">
+              <li>Designed an event-driven integration layer on Kafka, cutting cross-team handoffs from days to minutes.</li>
+              <li>Standardised CI/CD across teams with reusable GitHub Actions, reducing pipeline duplication by 60%.</li>
+              <li>Introduced GitOps with ArgoCD, giving every team a predictable, auditable path to production.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="exp-card">
+          <div class="exp-card__head">
+            <h3 class="exp-card__role">DevOps Engineer</h3>
+            <p class="exp-card__company">Mapletree Digital</p>
+            <span class="pill">2019 — 2022</span>
+          </div>
+          <div class="exp-card__body">
+            <p class="exp-card__summary">
+              Owned infrastructure and release tooling for a growing SaaS product.
+            </p>
+            <ul class="exp-points">
+              <li>Migrated a monolith to containerised services on Kubernetes with zero customer-facing downtime.</li>
+              <li>Built observability from scratch with Prometheus and Grafana, halving mean time to recovery.</li>
+              <li>Automated environment provisioning with Terraform, making new environments a one-command task.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="exp-card">
+          <div class="exp-card__head">
+            <h3 class="exp-card__role">Systems Engineer</h3>
+            <p class="exp-card__company">Corewave</p>
+            <span class="pill">2017 — 2019</span>
+          </div>
+          <div class="exp-card__body">
+            <p class="exp-card__summary">
+              Kept core services healthy and began the shift toward automation.
+            </p>
+            <ul class="exp-points">
+              <li>Replaced manual deploy scripts with Ansible playbooks, removing a class of release errors.</li>
+              <li>Set up the first CI pipeline, giving the team fast, trustworthy feedback on every change.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
     <section id="contact" class="section">
-      <h2 class="section__title">Contacto</h2>
-      <ul class="contact">
-        <li>Email: <a href="mailto:jorgee.lmelendez@gmail.com">jorgee.lmelendez@gmail.com</a></li>
-        <li>GitHub: <a href="#">github.com/tu-usuario</a></li>
-        <li>LinkedIn: <a href="#">linkedin.com/in/tu-usuario</a></li>
-      </ul>
+      <div class="contact-panel">
+        <p class="contact-panel__lead">Open to platform &amp; integration roles</p>
+        <!-- NOTA: el diseño trae este email; el contexto del proyecto usa
+             jorgee.lmelendez@gmail.com. Confirma cuál es el correcto. -->
+        <a class="contact-email" href="mailto:jorgee.lopezm@outlook.com">jorgee.lopezm@outlook.com</a>
+        <div class="contact-links">
+          <a href="https://github.com/jorgeelopezm">github.com/jorgeelopezm</a>
+          <span class="contact-links__sep" aria-hidden="true">·</span>
+          <a href="https://linkedin.com/in/jorgelopezm">linkedin.com/in/jorgelopezm</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 Jorge Meléndez</p>
+    <div class="site-footer__inner">
+      <span>&copy; 2026 Jorge Meléndez</span>
+      <span>Designed with calm in mind</span>
+    </div>
   </footer>
 </body>
 </html>

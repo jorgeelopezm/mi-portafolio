@@ -1,34 +1,185 @@
-/* components.css — piezas reutilizables: tarjetas de proyectos, lista de contacto */
+/* components.css — piezas reutilizables: kickers, píldoras, tarjetas, contacto */
 
-/* Proyectos: grid simple de 3 tarjetas */
-.projects {
+/* Kicker (etiqueta monoespaciada sobre los títulos) */
+.kicker {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  margin: 0 0 0.5rem;
+}
+
+/* Encabezado de sección */
+.edit-head__title {
+  font-size: clamp(1.625rem, 3vw, 1.9375rem);
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+/* Píldoras (periodos de experiencia) */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84375rem;
+  color: var(--color-accent-ink);
+  background-color: var(--color-accent-soft);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+}
+
+/* Skills: grid de tarjetas */
+.skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.125rem;
+  margin-top: 2rem;
 }
 
-.project-card {
+.skill-card {
   background-color: var(--color-surface);
-  border: 1px solid var(--color-sage);
-  border-radius: 6px;
-  padding: var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 1.375rem 1.5rem;
 }
 
-.project-card__title {
-  margin-bottom: var(--space-sm);
-  font-size: 1.125rem;
+.skill-card__title {
+  font-size: 1.03125rem;
+  font-weight: 600;
+  color: var(--color-accent-ink);
+  margin: 0 0 0.875rem;
 }
 
-/* Lista de contacto */
-.contact {
+.skill-list {
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
+  gap: 0.5625rem;
 }
 
-/* Responsive: tarjetas a una sola columna en pantallas pequeñas */
-@media (max-width: 600px) {
-  .projects {
+.skill-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 0.96875rem;
+  color: var(--color-text);
+}
+
+.skill-list li::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+
+/* Experience: tarjetas a 2 columnas */
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+  margin-top: 2rem;
+}
+
+.exp-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: clamp(1.5rem, 3vw, 1.875rem) clamp(1.5rem, 3.5vw, 2.125rem);
+  display: grid;
+  grid-template-columns: minmax(180px, 230px) 1fr;
+  column-gap: clamp(1.5rem, 3vw, 2.5rem);
+  row-gap: 1rem;
+}
+
+.exp-card__role {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+}
+
+.exp-card__company {
+  font-size: 1rem;
+  color: var(--color-accent-ink);
+  margin: 0 0 0.625rem;
+}
+
+.exp-card__summary {
+  margin: 0 0 0.75rem;
+  color: var(--color-text);
+}
+
+.exp-points {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5625rem;
+}
+
+.exp-points li {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: 0.96875rem;
+  color: var(--color-muted);
+  line-height: 1.55;
+}
+
+.exp-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+
+/* Contacto: panel centrado */
+.contact-panel {
+  background-color: var(--color-accent-soft);
+  border-radius: 22px;
+  padding: clamp(2.25rem, 5vw, 3.25rem) clamp(1.75rem, 4vw, 3rem);
+  text-align: center;
+}
+
+.contact-panel__lead {
+  font-size: 0.90625rem;
+  color: var(--color-accent-ink);
+  margin: 0 0 0.75rem;
+}
+
+.contact-email {
+  display: inline-block;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--color-text);
+}
+
+.contact-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.375rem;
+  color: var(--color-muted);
+  font-size: 0.96875rem;
+}
+
+.contact-links a {
+  color: var(--color-muted);
+}
+
+.contact-links__sep {
+  color: var(--color-accent);
+}
+
+/* Responsive: una sola columna en pantallas pequeñas */
+@media (max-width: 760px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exp-card {
     grid-template-columns: 1fr;
   }
 }

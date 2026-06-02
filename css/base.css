@@ -9,22 +9,27 @@
   padding: 0;
 }
 
-/* Paleta calmada (baja saturación) y escala de espaciado.
-   Máx. 4 colores + una superficie suave para tarjetas. */
+/* Paleta calmada "taupe" (baja saturación), mapeada desde el diseño de Claude Design.
+   Tonos cálidos, sin gradientes ni sombras fuertes. */
 :root {
-  --color-bg: #f4efe6;        /* fondo crema (no blanco puro) */
-  --color-text: #36352f;      /* gris cálido oscuro */
-  --color-accent: #5e7a8a;    /* azul apagado (encabezados / enlaces) */
-  --color-sage: #8a9a82;      /* verde salvia (acentos / bordes) */
-  --color-surface: #ede7da;   /* beige suave (tarjetas) */
+  --color-bg: #f3efe9;          /* fondo cálido (no blanco puro) */
+  --color-surface: #fbf9f5;     /* superficie de tarjetas / bandas */
+  --color-text: #423a31;        /* tinta principal */
+  --color-muted: #7a7264;       /* texto secundario */
+  --color-accent: #bba185;      /* acento (puntos, kickers) */
+  --color-accent-soft: #eaddcd; /* fondo de píldoras / panel de contacto */
+  --color-accent-ink: #6b5945;  /* texto sobre acento / subtítulos */
+  --color-border: #e6ddd0;      /* bordes de tarjetas */
+  --color-line: #efe8db;        /* líneas sutiles (footer) */
 
   --font-base: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
   --space-sm: 0.5rem;
   --space-md: 1.25rem;
   --space-lg: 3.5rem;
 
-  --max-width: 800px;
+  --max-width: 1080px;
 }
 
 body {
@@ -32,23 +37,25 @@ body {
   font-size: 1.0625rem;       /* ~17px, cómodo para lectura */
   color: var(--color-text);
   background-color: var(--color-bg);
-  line-height: 1.6;
+  line-height: 1.62;
 }
 
 h1,
 h2,
 h3 {
-  color: var(--color-accent);
+  color: var(--color-text);
   line-height: 1.3;
+  letter-spacing: -0.01em;
 }
 
 a {
-  color: var(--color-accent);
+  color: var(--color-accent-ink);
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 img {

@@ -74,8 +74,9 @@ Plan aprobado
 Prompt 7:
 /deploy fix:Implementación del comando deploy
 
-Prompt 8
+Prompt 8:
 Procede con git push origin main
 
 
-
+Promp 9:
+Mejora la UI usando los archivos generados por Claude Design ubicados en la carpeta raíz con el nombre 'My Portfolio.zip' una vez ejecutados los cambios, eliminar el archivo 

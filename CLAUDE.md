@@ -13,7 +13,7 @@ There is no build system, package manager, or framework — and none is planned.
 - **HTML and CSS only.** No JavaScript, no frameworks, no build tooling, no package manager. Keep dependencies at zero.
 - This is coursework — favor clear, readable, well-structured markup and styles over cleverness.
 - **Calm design brief.** No animations, transitions, parallax, carousels, or moving elements. No strong shadows or gradients — keep it static and predictable.
-- **Palette: max 4 muted, low-saturation colors** defined as `:root` variables in `base.css`: cream bg `#f4efe6` (never pure white), warm dark gray text `#36352f`, muted blue `#5e7a8a` (headings/links), sage green `#8a9a82` (accents/borders), plus a soft beige surface `#ede7da` for cards.
+- **Palette: warm "taupe" low-saturation tokens** defined as `:root` variables in `base.css` (adapted from Claude Design's editorial direction): warm bg `#f3efe9` (never pure white), card surface `#fbf9f5`, ink text `#423a31`, muted secondary `#7a7264`, taupe accent `#bba185`, soft accent `#eaddcd` (pills/contact panel), accent ink `#6b5945` (subtitles/links), border `#e6ddd0`, line `#efe8db`. Reuse via `var(--…)`; don't hardcode.
 - **Accessibility:** body font ≥16px (currently ~17px), `line-height: 1.6`, generous spacing between sections, clear heading hierarchy.
 
 ## Running
