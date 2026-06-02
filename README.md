@@ -33,6 +33,7 @@ assets/
 
 No requiere instalación ni paso de build. Elige una opción:
 
+- Por medio de la siguiente URL: https://jorgeelopezm.github.io/mi-portafolio/
 - Abre `index.html` directamente en el navegador (doble clic).
 - O sírvelo con un servidor estático, por ejemplo:
 
